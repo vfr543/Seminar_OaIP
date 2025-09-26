@@ -16,10 +16,9 @@ int main() {
 	int glas = 0;
 	char a;
 	bool temp = 0;
-	setlocale(LC_ALL, "Russian");
-	cout << "Äëÿ âûõîäà ââåäèòå ëþáîé ñèìâîë êðîìå áóêâ." << endl;
+	cout << "Ð”Ð»Ñ Ð²Ñ‹Ñ…Ð¾Ð´Ð° Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð»ÑŽÐ±Ð¾Ð¹ ÑÐ¸Ð¼Ð²Ð¾Ð» ÐºÑ€Ð¾Ð¼Ðµ Ð±ÑƒÐºÐ²." << endl;
 	while (temp == 0) {
-		cout << "Ââåäèòå áóêâó: ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð±ÑƒÐºÐ²Ñƒ: ";
 		cin >> a;
 		int numa = a;
 		if ((numa >= 65 && numa <= 90) || (numa >= 97 && numa <= 122)) {
@@ -31,6 +30,7 @@ int main() {
 			temp = 1;
 		}
 	}
-	cout << endl << "Ãëàñíûõ â ñòðîêå: " << glas << endl;
+	cout << endl << "Ð“Ð»Ð°ÑÐ½Ñ‹Ñ… Ð² ÑÑ‚Ñ€Ð¾ÐºÐµ : " << glas << endl;
 		return 0;
+
 }
