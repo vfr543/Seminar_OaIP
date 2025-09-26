@@ -3,14 +3,14 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "Russian");
 	int n, sum = 0;
-	setlocale(LC_ALL, "Russian");
-	cout << "Ââåäèòå ÷èñëî: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";
 	cin >> n;
 	for (int i = 1; i < n + 1; i++) {
 		if (i % 2 == 0 || i % 5 == 0) {
 			sum += i;
 		}
 	}
-	cout << endl << "Ñóììà ÷èñåë îò 1 äî n, êðàòíûõ 2 èëè 5: " << sum << endl;
+	cout << endl << "Ð¡ÑƒÐ¼Ð¼Ð° Ñ‡Ð¸ÑÐµÐ» Ð¾Ñ‚ 1 Ð´Ð¾ n, ÐºÑ€Ð°Ñ‚Ð½Ñ‹Ñ… 2 Ð¸Ð»Ð¸ 5 : " << sum << endl;
 		return 0;
+
 }
