@@ -3,13 +3,14 @@ using namespace std;
 int main() {
 	int a;
 	setlocale(LC_ALL, "Russian");
-	cout << "Ââåäèòå ÷èñëî: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";
 	cin >> a;
 	if (a % 2 == 0) {
-		cout << endl << "×èñëî " << a << " - ÷¸òíîå.";
+		cout << endl << "Ð§Ð¸ÑÐ»Ð¾ " << a << " - Ñ‡Ñ‘Ñ‚Ð½Ð¾Ðµ.";
 	}
 	else {
-		cout << endl << "×èñëî " << a << " - íå÷¸òíîå.";
+		cout << endl << "Ð§Ð¸ÑÐ»Ð¾ " << a << " - Ð½ÐµÑ‡Ñ‘Ñ‚Ð½Ð¾Ðµ.";
 	}
 		return 0;
+
 }
