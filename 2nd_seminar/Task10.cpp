@@ -3,16 +3,17 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "Russian");
 	int n;
-	cout << "Ââåäèòå ÷èñëî: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";
 	cin >> n;
 	if (n == 0) {
-		cout << endl << "×èñëî ðàâíî 0." << endl;
+		cout << endl << "Ð§Ð¸ÑÐ»Ð¾ Ñ€Ð°Ð²Ð½Ð¾ 0." << endl;
 	}
 	else if (n > 0) {
-		cout << endl << "×èñëî ïîëîæèòåëüíîå." << endl;
+		cout << endl << "Ð§Ð¸ÑÐ»Ð¾ Ð¿Ð¾Ð»Ð¾Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ðµ." << endl;
 	}
 	else {
-		cout << endl << "×èñëî îòðèöàòåëüíîå." << endl;
+		cout << endl << "Ð§Ð¸ÑÐ»Ð¾ Ð¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ðµ." << endl;
 	}
 		return 0;
+
 }
