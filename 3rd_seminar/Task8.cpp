@@ -27,7 +27,7 @@ int main() {
 	int n = 10, count = 0;
 	int mas[10];
 	for (int i = 0; i < n; i++) {
-		cout << "Ââåäèòå ÷èñëî A" << i + 1 << " : ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ A" << i + 1 << " : ";
 		cin >> mas[i];
 	}
 	if (maxInd(mas) == 1 && minInd(mas) == 4) {
