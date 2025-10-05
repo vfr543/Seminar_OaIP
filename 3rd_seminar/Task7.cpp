@@ -27,7 +27,7 @@ int main() {
 	int n = 15, count = 0;
 	int mas[15];
 	for (int i = 0; i < n; i++) {
-		cout << "Ââåäèòå ÷èñëî A" << i + 1 << " : ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ A" << i + 1 << " : ";
 		cin >> mas[i];
 	}
 	if (mas[maxInd(mas)] == 0 || mas[minInd(mas)] == 0) {
