@@ -27,7 +27,7 @@ int main() {
 	int n = 15, count = 0;
 	double mas[15];
 	for (int i = 0; i < n; i++) {
-		cout << "Ââåäèòå ÷èñëî A" << i + 1 << " : ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ A" << i + 1 << " : ";
 		cin >> mas[i];
 	}
 	if (maxInd(mas) < minInd(mas)) {
@@ -35,7 +35,7 @@ int main() {
 		cout << endl << temp << endl;
 	}
 	else {
-		cout << endl << "Ìàêñèìàëüíûé ýëåìåíò íå ïðåäøåñòâóåò ìèíèìàëüíîìó" << endl;
+		cout << endl << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð½Ðµ Ð¿Ñ€ÐµÐ´ÑˆÐµÑÑ‚Ð²ÑƒÐµÑ‚ Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð¼Ñƒ" << endl;
 	}
 	return 0;
 }
