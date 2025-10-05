@@ -4,11 +4,11 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "Russian");
 	int n, count = 0;
-	cout << "Ââåäèòå ÷èñëî n: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ n: ";
 	cin >> n;
 	int an = 0;
 	for (int i = 1; i < n + 1; i++) {
-		cout << "Ââåäèòå ÷èñëî A" << i << " : ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ A" << i << " : ";
 		cin >> an;
 		if (pow(2, i) < an) {
 			count++;
