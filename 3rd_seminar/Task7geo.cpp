@@ -40,6 +40,21 @@ int main() {
 			flag = 2;
 		}
 	}
+	if (flag == 2) {
+		flag = 0;
+		for (int i = 0; i < n; i++) {
+			int temp = vectPr(arrx[i], arry[i], arrx[i + 1], arry[i + 1], x1, y1);
+			if (flag == 0 && temp < 0) {
+				flag = 0;
+			}
+			else if (temp == 0) {
+				flag = 1;
+			}
+			else {
+				flag = 2;
+			}
+		}
+	}
 	switch (flag) {
 	case 0:
 		cout << "Точка лежит в многограннике";
@@ -53,3 +68,4 @@ int main() {
 	}
 	return 0;
 }
+
