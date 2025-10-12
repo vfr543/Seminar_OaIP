@@ -5,13 +5,13 @@ int main() {
 	setlocale(LC_ALL, "Russian");
 	int n, m, mx, mn;
 	bool fl = true;
-	cout << "Ââåäèòå ðàçìåð ìàòðèöû: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹: ";
 	cin >> n;
 	cin >> m;
 	vector<vector<int>> matrix(n ,vector<int>(m));
 	vector<vector<int>> matrixst(2, vector<int>(m));
 	vector<vector<int>> matrixstr(n, vector<int>(2));
-	cout << "Ââåäèòå ìàòðèöó: " << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñƒ: " << endl;
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < m; j++) {
 			cin >> matrix[i][j];
