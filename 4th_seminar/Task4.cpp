@@ -5,7 +5,7 @@ int main() {
 	setlocale(LC_ALL, "Russian");
 	int x, matrix[4][5];
 	double a, b, c, d, det, r, da, db, dc, dd;
-	cout << "Ââåäèòå êîîðäèíàòû 4 òî÷åê:" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹ 4 Ñ‚Ð¾Ñ‡ÐµÐº:" << endl;
 	for (int i = 0; i < 4; i++) {
 		for (int j = 0; j < 3; j++) {
 			cin >> x;
@@ -35,7 +35,7 @@ int main() {
 		 matrix[0][2] * (matrix[1][0] * (matrix[2][1] * matrix[3][4] - matrix[2][4] * matrix[3][1]) - matrix[1][1] * (matrix[2][0] * matrix[3][4] - matrix[2][4] * matrix[3][0]) + matrix[1][4] * (matrix[2][0] * matrix[3][1] - matrix[2][1] * matrix[3][0])) -
 		 matrix[0][4] * (matrix[1][0] * (matrix[2][1] * matrix[3][2] - matrix[2][2] * matrix[3][1]) - matrix[1][1] * (matrix[2][0] * matrix[3][2] - matrix[2][2] * matrix[3][0]) + matrix[1][2] * (matrix[2][0] * matrix[3][1] - matrix[2][1] * matrix[3][0]));
 	if (det == 0) {
-		cout << "Ââåäåíû íåêîððåêòíûå êîîðäèíàòû";		
+		cout << "Ð’Ð²ÐµÐ´ÐµÐ½Ñ‹ Ð½ÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹";		
 	}
 	else {
 		a = da / det;
@@ -46,7 +46,7 @@ int main() {
 		b = b / 2.0;
 		c = c / 2.0;
 		r = pow(a, 2) + pow(b, 2) + pow(c, 2) - d;
-		cout << "Óðàâíåíèå ñôåðû: " << abs(r) << " = (x - (" << -a << "))^2 + (y - (" << -b << "))^2 + (z - (" << -c << "))^2";
+		cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ ÑÑ„ÐµÑ€Ñ‹: " << abs(r) << " = (x - (" << -a << "))^2 + (y - (" << -b << "))^2 + (z - (" << -c << "))^2";
 	}
 	return 0;
 }
