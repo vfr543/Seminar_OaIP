@@ -5,7 +5,7 @@ int main() {
 	setlocale(LC_ALL, "Russian");
 	int a, matrix[3][4];
 	double det, dx, dy, dz, x, y, z;
-	cout << "Ââåäèòå ìàòðèöó: " << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñƒ: " << endl;
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 4; j++) {
 			cin >> a;
