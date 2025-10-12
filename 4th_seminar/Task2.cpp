@@ -5,13 +5,13 @@ int main() {
 	double M_PI=3.1415926535;
 	setlocale(LC_ALL, "Russian");
 	int x, y, theta;
-	cout << "Ââåäèòå êîîðäèíàòû òî÷êè: " << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹ Ñ‚Ð¾Ñ‡ÐºÐ¸: " << endl;
 	cin >> x >> y;
-	cout << "Ââåäèòå óãîë ïîâîðîòà: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑƒÐ³Ð¾Ð» Ð¿Ð¾Ð²Ð¾Ñ€Ð¾Ñ‚Ð°: ";
 	cin >> theta;
 	double theta_r = theta * M_PI / 180.0;
 	double x_n = cos(theta_r) * x + sin(theta_r) * y;
 	double y_n = -sin(theta_r) * x + cos(theta_r) * y;
-	cout << "Íîâûå êîîðäèíàòû òî÷åê: " << x_n << " " << y_n << endl;
+	cout << "ÐÐ¾Ð²Ñ‹Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹ Ñ‚Ð¾Ñ‡ÐµÐº: " << x_n << " " << y_n << endl;
 	return 0;
 }
