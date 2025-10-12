@@ -4,10 +4,10 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "Russian");
     int N, M;
-	cout << "Ââåäèòå ðàçìåð ìàòðèöû: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹: ";
 	cin >> N >> M;
 	vector<vector<int>> matrix(N ,vector<int>(M));
-	cout << "Ââåäèòå ìàòðèöó: " << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñƒ: " << endl;
 	for (int i = 0; i < N; i++) {
 		for (int j = 0; j < M; j++) {
 			cin >> matrix[i][j];
