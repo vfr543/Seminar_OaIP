@@ -21,10 +21,10 @@ bool eq(vector<vector<int>> a, vector<vector<int>> b, int n) {
 int main() {
 	setlocale(LC_ALL, "Russian");
 	int n;
-	cout << "Ââåäèòå ðàçìåð ìàòðèöû: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹: ";
 	cin >> n;
 	vector<vector<int>> matrix(n ,vector<int>(n));
-	cout << "Ââåäèòå ìàòðèöó: " << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñƒ: " << endl;
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
 			cin >> matrix[i][j];
