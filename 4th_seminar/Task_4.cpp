@@ -4,7 +4,7 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "Russian");
     int N;
-	cout << "Ââåäèòå ðàçìåð ìàòðèöû: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹: ";
 	cin >> N;
 	vector<vector<int>> matrix(N ,vector<int>(N));
     int num = 1;
