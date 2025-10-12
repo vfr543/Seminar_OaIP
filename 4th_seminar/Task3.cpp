@@ -5,7 +5,7 @@ int main() {
 	setlocale(LC_ALL, "Russian");
 	int matrix[3][3];
 	double s;
-	cout << "Ââåäèòå êîîðäèíàòû òð¸õ òî÷åê:" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹ Ñ‚Ñ€Ñ‘Ñ… Ñ‚Ð¾Ñ‡ÐµÐº:" << endl;
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 2; j++) {
 			cin >> matrix[i][j];
@@ -16,10 +16,10 @@ int main() {
 		pow(-1, 3 + 2) * matrix[1][2] * (matrix[0][0] * matrix[2][1] - matrix[0][1] * matrix[2][0]) +
 		pow(-1, 3 + 3) * matrix[2][2] * (matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0]));
 	if (s == 0) {
-		cout << "Òî÷êè êîëëèíåàðíû";
+		cout << "Ð¢Ð¾Ñ‡ÐºÐ¸ ÐºÐ¾Ð»Ð»Ð¸Ð½ÐµÐ°Ñ€Ð½Ñ‹";
 	}
 	else {
-		cout << "Òî÷êè íåêîëëèíåàðíû";
+		cout << "Ð¢Ð¾Ñ‡ÐºÐ¸ Ð½ÐµÐºÐ¾Ð»Ð»Ð¸Ð½ÐµÐ°Ñ€Ð½Ñ‹";
 	}
 	return 0;
 }
