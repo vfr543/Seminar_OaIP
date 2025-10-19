@@ -2,7 +2,7 @@
 #include <cstring>
 #include <cctype>
 using namespace std;
-void caesarCipher(char text[], int shift) {
+void cipher(char text[], int shift) {
     shift = shift % 26;
     if (shift < 0) {
         shift += 26;
@@ -20,12 +20,12 @@ int main() {
     setlocale(LC_ALL, "Russian");
     char text[256];
     int shift;
-    cout << "Ââåäèòå òåêñò ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚ÐµÐºÑÑ‚ ";
     cin.getline(text, 256);
-    cout << "Ââåäèòå ñäâèã ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ´Ð²Ð¸Ð³ ";
     cin >> shift;
-    caesarCipher(text, shift);
-    cout << "Çàøèôðîâàííûé òåêñò " << text << endl;
+    cipher(text, shift);
+    cout << "Ð—Ð°ÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ð¹ Ñ‚ÐµÐºÑÑ‚ " << text << endl;
 
     return 0;
 }
