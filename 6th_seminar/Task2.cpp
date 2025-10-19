@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int countUniqueChars(char str[]) {
+int countUnCh(char str[]) {
     int length = strlen(str);
     int uniqueCount = 0;
 
@@ -22,7 +22,7 @@ int countUniqueChars(char str[]) {
     return uniqueCount;
 }
 
-void printUniqueChars(char str[]) {
+void printUnCh(char str[]) {
     int length = strlen(str);
     cout << "Уникальные символы ";
     for (int i = 0; i < length; i++) {
@@ -48,8 +48,9 @@ int main() {
     char input[256];
     cout << "Введите строку ";
     cin.getline(input, 256);
-    int uniqueCount = countUniqueChars(input);
+    int uniqueCount = countUnCh(input);
     cout << "Количество уникальных символов " << uniqueCount << endl;
-    printUniqueChars(input);
+    printUnCh(input);
     return 0;
 }
+
