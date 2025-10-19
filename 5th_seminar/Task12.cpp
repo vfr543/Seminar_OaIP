@@ -6,22 +6,22 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "Russian");
 	vector<double> a(50);
-	cout << "Ââåäèòå ìàññèâ ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°ÑÑÐ¸Ð² ";
 	for (int i = 0; i < 50; i++) {
 		cin >> a[i];
 	}
 	auto mx = max_element(a.begin(), a.end());
 	double mn = *min_element(a.begin(), a.end());
-	cout << "Ìèíèìàëüíûé óðîâåíü òîïëèâà " << mn << endl;
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑƒÑ€Ð¾Ð²ÐµÐ½ÑŒ Ñ‚Ð¾Ð¿Ð»Ð¸Ð²Ð° " << mn << endl;
 	bool tmp = all_of(a.begin(), a.end(), [mx](double x) { return (x >= (*mx * 0.95)); });
 	if (tmp) {
-		cout << "Óðîâåíü òîïëèâà íå ïàäàë íèæå 5% îò ìàêñèìàëüíîãî" << endl;
+		cout << "Ð£Ñ€Ð¾Ð²ÐµÐ½ÑŒ Ñ‚Ð¾Ð¿Ð»Ð¸Ð²Ð° Ð½Ðµ Ð¿Ð°Ð´Ð°Ð» Ð½Ð¸Ð¶Ðµ 5% Ð¾Ñ‚ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾" << endl;
 	}
 	else{
-		cout << "Óðîâåíü òîïëèâà ïàäàë íèæå 5% îò ìàêñèìàëüíîãî " << endl;
+		cout << "Ð£Ñ€Ð¾Ð²ÐµÐ½ÑŒ Ñ‚Ð¾Ð¿Ð»Ð¸Ð²Ð° Ð¿Ð°Ð´Ð°Ð» Ð½Ð¸Ð¶Ðµ 5% Ð¾Ñ‚ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ " << endl;
 	}
 	double sr = a[0]-a[49];
-	cout << "Ñðåäíåå ïîòðåáëåíèå òîïëèâà " << sr << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð¿Ð¾Ñ‚Ñ€ÐµÐ±Ð»ÐµÐ½Ð¸Ðµ Ñ‚Ð¾Ð¿Ð»Ð¸Ð²Ð° " << sr << endl;
 	sort(a.begin(), a.end());
 	double median;
 	if (a.size() % 2 == 0) {
@@ -31,7 +31,7 @@ int main() {
 		median = a[a.size() / 2];
 	}
 	for (double x : a) { cout << x << ' '; }
-	cout << "Ìåäèàíà " << median;
+	cout << "ÐœÐµÐ´Ð¸Ð°Ð½Ð° " << median;
 	
 	return 0;
 }
