@@ -6,18 +6,18 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "Russian");
 	vector<double> a(50);
-	cout << "Ââåäèòå ìàññèâ ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°ÑÑÐ¸Ð² ";
 	for (int i = 0; i < 50; i++) {
 		cin >> a[i];
 	}
 	a.erase(remove_if(a.begin(), a.end(), [](double x) { return (x < 0 || x > 12);  }), a.end());
 	for (double x : a) { cout << x << ' '; }
 	double sr = accumulate(a.begin(), a.end(), 0.0) / (a.size() * 1.0);
-	cout << endl << "Ñðåäíåå äàâëåíèå " << sr << endl;
+	cout << endl << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð´Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ " << sr << endl;
 	auto mx = max_element(a.begin(), a.end());
 	auto mn = min_element(a.begin(), a.end());
-	cout << "Ìàêñèìàëüíîå äàâëåíèå " << *mx << " Ìèíèìàëüíîå äàâëåíèå " << *mn << endl;
-	cout << "Çíà÷åíèÿ, ïðåâûøàþùèå 8 áàð" << endl;
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð´Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ " << *mx << " ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð´Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ " << *mn << endl;
+	cout << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ, Ð¿Ñ€ÐµÐ²Ñ‹ÑˆÐ°ÑŽÑ‰Ð¸Ðµ 8 Ð±Ð°Ñ€" << endl;
 	for_each(a.end() - 10, a.end(), [](double x) { if (x > 8) { cout << x << ' '; } });
 	return 0;
 }
