@@ -8,7 +8,7 @@ int main() {
 	vector<vector<double>> a(24, vector <double> (2));
 	vector<double> r(24);
 	vector<double> r1(24);
-	cout << "Ââåäèòå ìàññèâ ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°ÑÑÐ¸Ð² ";
 	for (int i = 0; i < 24; i++) {
 		cin >> a[i][0];
 		r[i] = a[i][0];
@@ -19,14 +19,14 @@ int main() {
 	for (vector<double> x : a) { cout << x[0] << ' '; }
 	double sr = accumulate(r.begin(), r.end(), 0.0) / (r.size() * 1.0);
 	double sum = accumulate(r.begin(), r.end(), 0.0);
-	cout << endl << "Ñóììàðíîå ïîòðåáëåíèå " << sum << " Ñðåäíåå ïîòðåáëåíèå " << sr << endl;
+	cout << endl << "Ð¡ÑƒÐ¼Ð¼Ð°Ñ€Ð½Ð¾Ðµ Ð¿Ð¾Ñ‚Ñ€ÐµÐ±Ð»ÐµÐ½Ð¸Ðµ " << sum << " Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð¿Ð¾Ñ‚Ñ€ÐµÐ±Ð»ÐµÐ½Ð¸Ðµ " << sr << endl;
 	auto mx = max_element(r.begin(), r.end());
-	cout << "×àñû ïèêîâîãî ïîòðåáëåíèÿ ";
+	cout << "Ð§Ð°ÑÑ‹ Ð¿Ð¸ÐºÐ¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾Ñ‚Ñ€ÐµÐ±Ð»ÐµÐ½Ð¸Ñ ";
 	for (vector<double> x : a) { if (x[0] == *mx) { cout << x[1] << ' '; } }
 	transform(r.begin(), r.end(), r.begin(), [sr](double x) { return x - sr; });
-	cout << endl << "Îòêëîíåíèÿ îò ñðåäíåãî ";
+	cout << endl << "ÐžÑ‚ÐºÐ»Ð¾Ð½ÐµÐ½Ð¸Ñ Ð¾Ñ‚ ÑÑ€ÐµÐ´Ð½ÐµÐ³Ð¾ ";
 	for (double x : r) { cout << x << ' '; }
-	cout << endl << "Òîï 5 ìèíèìàëüíûõ ÷àñîâ ïîòðåáëåíèÿ ";
+	cout << endl << "Ð¢Ð¾Ð¿ 5 Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ñ… Ñ‡Ð°ÑÐ¾Ð² Ð¿Ð¾Ñ‚Ñ€ÐµÐ±Ð»ÐµÐ½Ð¸Ñ ";
 	for (int i = 0; i < 5; i++) {
 		cout << a[i][1] << ' ';
 	}
