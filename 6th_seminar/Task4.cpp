@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstring>
 using namespace std;
-bool containsAllChars(char A[], char B[]) {
+bool cont(char A[], char B[]) {
     int lenA = strlen(A);
     int lenB = strlen(B);
     for (int i = 0; i < lenB; i++) {
@@ -27,7 +27,7 @@ int main() {
     cin.getline(A, 256);
     cout << "Введите строку B: ";
     cin.getline(B, 256);
-    if (containsAllChars(A, B)) {
+    if (cont(A, B)) {
         cout << "Да" << endl;
     }
     else {
@@ -35,3 +35,4 @@ int main() {
     }
     return 0;
 }
+
