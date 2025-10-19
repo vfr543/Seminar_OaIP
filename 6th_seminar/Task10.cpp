@@ -15,7 +15,7 @@ void rev(char text[]) {
 int main() {
     setlocale(LC_ALL, "Russian");
     char text[256];
-    cout << "Ââåäèòå ïðåäëîæåíèå ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€ÐµÐ´Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ ";
     cin.getline(text, 256);
     rev(text);
     cout << text << endl;
