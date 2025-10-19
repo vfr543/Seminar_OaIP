@@ -28,15 +28,15 @@ bool areAnagrams(char str1[], char str2[]) {
 int main() {
     setlocale(LC_ALL, "Russian");
     char str1[256], str2[256];
-    cout << "Ââåäèòå ïåðâóþ ñòðîêó: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿ÐµÑ€Ð²ÑƒÑŽ ÑÑ‚Ñ€Ð¾ÐºÑƒ: ";
     cin.getline(str1, 256);
-    cout << "Ââåäèòå âòîðóþ ñòðîêó: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‚Ð¾Ñ€ÑƒÑŽ ÑÑ‚Ñ€Ð¾ÐºÑƒ: ";
     cin.getline(str2, 256);
     if (areAnagrams(str1, str2)) {
-        cout << "Äà" << endl;
+        cout << "Ð”Ð°" << endl;
     }
     else {
-        cout << "Íåò" << endl;
+        cout << "ÐÐµÑ‚" << endl;
     }
     return 0;
 }
