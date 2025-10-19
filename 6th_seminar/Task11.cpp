@@ -22,12 +22,12 @@ void unstr(char str[], int k) {
     int uniqueCount = 0;
 
     if (k > length) {
-        cout << "k áîëüøå äëèíû ñòğîêè" << endl;
+        cout << "k Ğ±Ğ¾Ğ»ÑŒÑˆĞµ Ğ´Ğ»Ğ¸Ğ½Ñ‹ ÑÑ‚Ñ€Ğ¾ĞºĞ¸" << endl;
         return;
     }
 
     if (k <= 0) {
-        cout << "k äîëæíî áûòü ïîëîæèòåëüíûì ÷èñëîì" << endl;
+        cout << "k Ğ´Ğ¾Ğ»Ğ¶Ğ½Ğ¾ Ğ±Ñ‹Ñ‚ÑŒ Ğ¿Ğ¾Ğ»Ğ¾Ğ¶Ğ¸Ñ‚ĞµĞ»ÑŒĞ½Ñ‹Ğ¼ Ñ‡Ğ¸ÑĞ»Ğ¾Ğ¼" << endl;
         return;
     }
     for (int i = 0; i <= length - k; i++) {
@@ -44,16 +44,16 @@ void unstr(char str[], int k) {
         }
     }
     if (uniqueCount == 0) {
-        cout << "Ïîäñòğîê íå íàéäåíî" << endl;
+        cout << "ĞŸĞ¾Ğ´ÑÑ‚Ñ€Ğ¾Ğº Ğ½Ğµ Ğ½Ğ°Ğ¹Ğ´ĞµĞ½Ğ¾" << endl;
     }
 }
 int main() {
     setlocale(LC_ALL, "Russian");
     char str[256];
     int k;
-    cout << "Ââåäèòå ñòğîêó ";
+    cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ÑÑ‚Ñ€Ğ¾ĞºÑƒ ";
     cin.getline(str, 256);
-    cout << "Ââåäèòå k ";
+    cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ k ";
     cin >> k;
     unstr(str, k);
     return 0;
