@@ -6,7 +6,7 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "Russian");
 	vector<double> a(10);
-	cout << "Ââåäèòå ìàññèâ " << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°ÑÑÐ¸Ð² " << endl;
 	for (int i = 0; i < 10; i++) {
 		cin >> a[i];
 	}
@@ -14,10 +14,10 @@ int main() {
 	for (int x : a) cout << x << ' ';
 	cout << endl;
 	double sr = accumulate(a.begin(), a.end(), 0.0) / 2.0;
-	cout << "Ñðåäíåå çíà÷åíèå " << sr << endl;
-	cout << "Ìàêñèìàëüíûé ýëåìåíò " << *max_element(a.begin(), a.end()) << endl;
-	cout << "Ìèíèìàëüíûé ýëåìåíò " << *min_element(a.begin(), a.end()) << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ " << sr << endl;
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ " << *max_element(a.begin(), a.end()) << endl;
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ " << *min_element(a.begin(), a.end()) << endl;
 	auto t = find_if(a.begin(), a.end(), [](int x) {return x <= -10; });
-	if (t != a.end()) { cout << "Íå âñå òåìïåðàòóðû ïðåâûøàþò -10 ãðàäóñîâ"; } else { cout << "Âñå òåìïåðàòóðû ïðåâûøàþò -10 ãðàäóñîâ"; }
+	if (t != a.end()) { cout << "ÐÐµ Ð²ÑÐµ Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ñ‹ Ð¿Ñ€ÐµÐ²Ñ‹ÑˆÐ°ÑŽÑ‚ -10 Ð³Ñ€Ð°Ð´ÑƒÑÐ¾Ð²"; } else { cout << "Ð’ÑÐµ Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ñ‹ Ð¿Ñ€ÐµÐ²Ñ‹ÑˆÐ°ÑŽÑ‚ -10 Ð³Ñ€Ð°Ð´ÑƒÑÐ¾Ð²"; }
 	return 0;
 }
