@@ -34,11 +34,11 @@ int main() {
     char str[256];
     char oldSub[256];
     char newSub[256];
-    cout << "Ââåäèòå ñòğîêó ";
+    cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ÑÑ‚Ñ€Ğ¾ĞºÑƒ ";
     cin.getline(str, 256);
-    cout << "Ââåäèòå ïîäñòğîêó äëÿ çàìåíû ";
+    cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¿Ğ¾Ğ´ÑÑ‚Ñ€Ğ¾ĞºÑƒ Ğ´Ğ»Ñ Ğ·Ğ°Ğ¼ĞµĞ½Ñ‹ ";
     cin.getline(oldSub, 256);
-    cout << "Ââåäèòå íîâóş ïîäñòğîêó ";
+    cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ½Ğ¾Ğ²ÑƒÑ Ğ¿Ğ¾Ğ´ÑÑ‚Ñ€Ğ¾ĞºÑƒ ";
     cin.getline(newSub, 256);
     replaceSubstring(str, oldSub, newSub);
     cout << str << endl;
