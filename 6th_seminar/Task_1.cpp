@@ -26,19 +26,19 @@ void longW(char str[]) {
         currentStart++;
     }
     if (maxLength > 0) {
-        cout << "Ñàìîå äëèííîå ñëîâî ";
+        cout << "Ğ¡Ğ°Ğ¼Ğ¾Ğµ Ğ´Ğ»Ğ¸Ğ½Ğ½Ğ¾Ğµ ÑĞ»Ğ¾Ğ²Ğ¾ ";
         for (int i = longestStart; i < longestStart + maxLength; i++) {
             cout << str[i];
         }
     }
     else {
-        cout << "Â ñòğîêå íåò ñëîâ" << endl;
+        cout << "Ğ’ ÑÑ‚Ñ€Ğ¾ĞºĞµ Ğ½ĞµÑ‚ ÑĞ»Ğ¾Ğ²" << endl;
     }
 }
 int main() {
     setlocale(LC_ALL, "Russian");
     char input[256];
-    cout << "Ââåäèòå ñòğîêó: ";
+    cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ÑÑ‚Ñ€Ğ¾ĞºÑƒ: ";
     cin.getline(input, 256);
     longW(input);
     return 0;
