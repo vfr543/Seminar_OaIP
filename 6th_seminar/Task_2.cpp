@@ -18,9 +18,9 @@ int main() {
     setlocale(LC_ALL, "Russian");
     char str[256];
     char ch;
-    cout << "Ââåäèòå ñòðîêó ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ñ€Ð¾ÐºÑƒ ";
     cin.getline(str, 256);
-    cout << "Ââåäèòå ñèìâîë äëÿ óäàëåíèÿ ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ¸Ð¼Ð²Ð¾Ð» Ð´Ð»Ñ ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ñ ";
     cin >> ch;
     rem(str, ch);
     cout << str << endl;
