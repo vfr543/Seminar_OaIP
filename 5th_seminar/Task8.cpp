@@ -8,7 +8,7 @@ int main() {
 	setlocale(LC_ALL, "Russian");
 	vector<int> a(50);
 	vector<int> bol120(50);
-	cout << "Èñõîäíûé ìàññèâ ";
+	cout << "Ð˜ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð² ";
 	random_device rd;
 	mt19937 gen(rd());
 	uniform_int_distribution<int> dist(0, 180);
@@ -17,16 +17,16 @@ int main() {
 		cout << a[i] << ' ';
 	}
 	copy_if(a.begin(), a.end(), back_inserter(bol120), [](int x) { return x > 120; });
-	cout << endl << "Îòôèëüòðîâàííûå ïðåâûøåíèÿ ñêîðîñòè ";
+	cout << endl << "ÐžÑ‚Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ðµ Ð¿Ñ€ÐµÐ²Ñ‹ÑˆÐµÐ½Ð¸Ñ ÑÐºÐ¾Ñ€Ð¾ÑÑ‚Ð¸ ";
 	for (int x : bol120) if (x != 0) { cout << x << ' '; }
 	cout << endl;
 	double sr = accumulate(a.begin(), a.end(), 0.0) / 50.0;
-	cout << "Ñðåäíåå çíà÷åíèå " << sr << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ " << sr << endl;
 	vector<int> sorta = a;
 	sort(sorta.begin(), sorta.end());
 	auto temp = find(sorta.begin(), sorta.end(), 0);
-	if (temp != sorta.end()) { cout << "Àâòîìîáèëü îñòàíàâëèâàëñÿ" << endl; } else{ cout << "Àâòîìîáèëü íå îñòàíàâëèâàëñÿ" << endl; }
-	cout << "10 ìàêñèìàëüíûõ çíà÷åíèé ñêîðîñòè " << endl;
+	if (temp != sorta.end()) { cout << "ÐÐ²Ñ‚Ð¾Ð¼Ð¾Ð±Ð¸Ð»ÑŒ Ð¾ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°Ð»ÑÑ" << endl; } else{ cout << "ÐÐ²Ñ‚Ð¾Ð¼Ð¾Ð±Ð¸Ð»ÑŒ Ð½Ðµ Ð¾ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°Ð»ÑÑ" << endl; }
+	cout << "10 Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ñ… Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ð¹ ÑÐºÐ¾Ñ€Ð¾ÑÑ‚Ð¸ " << endl;
 	for_each(sorta.end() - 10 , sorta.end(), [](int x) { cout << x << ' '; });
 	return 0;
 }
