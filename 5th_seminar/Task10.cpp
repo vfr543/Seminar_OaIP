@@ -7,7 +7,7 @@ int main() {
 	setlocale(LC_ALL, "Russian");
 	vector<int> a(30);
 	vector<int> pic(30);
-	cout << "Ââåäèòå ìàññèâ ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°ÑÑÐ¸Ð² ";
 	for (int i = 0; i < 30; i++) {
 		cin >> a[i];
 	}
@@ -16,11 +16,11 @@ int main() {
 	double sr = accumulate(a.begin(), a.end(), 0.0) / (a.size() * 1.0);
 	int ob = accumulate(a.begin(), a.end(), 0.0);
 	copy_if(a.begin(), a.end(), back_inserter(pic), [sr](int x) { return x > (sr * 1.2); });
-	cout << "Îáùåå ïîòðåáëåíèå çà ìåñÿö " << ob << endl;
-	cout << "Ñðåäíåñóòî÷íîå çíà÷åíèå " << sr << endl;
-	cout << "Äíè ñ ìàêñèìàëüíûì ïîòðåáëåíèåì";
+	cout << "ÐžÐ±Ñ‰ÐµÐµ Ð¿Ð¾Ñ‚Ñ€ÐµÐ±Ð»ÐµÐ½Ð¸Ðµ Ð·Ð° Ð¼ÐµÑÑÑ† " << ob << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÑÑƒÑ‚Ð¾Ñ‡Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ " << sr << endl;
+	cout << "Ð”Ð½Ð¸ Ñ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¼ Ð¿Ð¾Ñ‚Ñ€ÐµÐ±Ð»ÐµÐ½Ð¸ÐµÐ¼";
 	for (int i = 0; i < a.size(); i++) { if (a[i] == *mx) { cout << ' ' << i + 1; } }
-	cout << endl << "Äíè ñ ìèíèìàëüíûì ïîòðåáëåíèåì";
+	cout << endl << "Ð”Ð½Ð¸ Ñ Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¼ Ð¿Ð¾Ñ‚Ñ€ÐµÐ±Ð»ÐµÐ½Ð¸ÐµÐ¼";
 	for (int i = 0; i < a.size(); i++) { if (a[i] == *mn) { cout << ' ' << i + 1; } }
 	cout << endl;
 	for (int x : pic) { if (x != 0){ cout << x << ' '; } }
