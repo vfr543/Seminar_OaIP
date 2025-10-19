@@ -5,12 +5,12 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "Russian");
 	vector<int> a(20);
-	cout << "Ââåäèòå ìàññèâ " << endl;
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¬Ã Ã±Ã±Ã¨Ã¢ " << endl;
 	for (int i = 0; i < 20; i++) {
 		cin >> a[i];
 	}
 	auto it = find(a.begin(), a.end(), 7);
-	if (it != a.end()) { cout << "Åñòü ÷èñëî 7" << endl; } else { cout << "Íåò ÷èñëà 7" << endl; }
+	if (it != a.end()) { cout << "Ã…Ã±Ã²Ã¼ Ã·Ã¨Ã±Ã«Ã® 7" << endl; } else { cout << "ÃÃ¥Ã² Ã·Ã¨Ã±Ã«Ã  7" << endl; }
 	sort(a.begin(), a.end());
 	a.erase(unique(a.begin(), a.end()), a.end());
 	for (int x : a) cout << x << ' ';
