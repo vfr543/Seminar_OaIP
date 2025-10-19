@@ -6,26 +6,26 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "Russian");
 	vector<double> a(50);
-	cout << "Ââåäèòå ìàññèâ ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°ÑÑÐ¸Ð² ";
 	for (int i = 0; i < 50; i++) {
 		cin >> a[i];
 	}
 	a.erase(remove_if(a.begin(), a.end(), [](double x) { return x < 0.1;  }), a.end());
-	cout << "Çíà÷åíèÿ áåç øóìîâ ";
+	cout << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð±ÐµÐ· ÑˆÑƒÐ¼Ð¾Ð² ";
 	for (double x : a) { cout << x << ' '; }
 	cout << endl;
 	auto mx = max_element(a.begin(), a.end());
 	double sr = accumulate(a.begin(), a.end(), 0.0) / (a.size() * 1.0);
-	cout << "Ñðåäíåå çíà÷åíèå àìïëèòóäû " << sr << " Ìàêñèìàëüíîå çíà÷åíèå àìïëèòóäû " << *mx << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð°Ð¼Ð¿Ð»Ð¸Ñ‚ÑƒÐ´Ñ‹ " << sr << " ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð°Ð¼Ð¿Ð»Ð¸Ñ‚ÑƒÐ´Ñ‹ " << *mx << endl;
 	bool tmp = all_of(a.begin(), a.end(), [](double x) { return (x >= 0.5); });
 	if (tmp) {
-		cout << "Âñå çíà÷åíèÿ ïðåâûøàþò ïîðîã 0.5 " << endl;
+		cout << "Ð’ÑÐµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¿Ñ€ÐµÐ²Ñ‹ÑˆÐ°ÑŽÑ‚ Ð¿Ð¾Ñ€Ð¾Ð³ 0.5 " << endl;
 	}
 	else{
-		cout << "Íå âñå çíà÷åíèÿ ïðåâûøàþò ïîðîã 0.5 " << endl;
+		cout << "ÐÐµ Ð²ÑÐµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¿Ñ€ÐµÐ²Ñ‹ÑˆÐ°ÑŽÑ‚ Ð¿Ð¾Ñ€Ð¾Ð³ 0.5 " << endl;
 	}
 	sort(a.begin(), a.end());
-	cout << "10 íàèáîëüøèõ àìïëèòóä äëÿ àíàëèçà ";
+	cout << "10 Ð½Ð°Ð¸Ð±Ð¾Ð»ÑŒÑˆÐ¸Ñ… Ð°Ð¼Ð¿Ð»Ð¸Ñ‚ÑƒÐ´ Ð´Ð»Ñ Ð°Ð½Ð°Ð»Ð¸Ð·Ð° ";
 	for_each(a.end() - 10, a.end(), [](double x) { cout << x << ' '; });
 	
 	return 0;
