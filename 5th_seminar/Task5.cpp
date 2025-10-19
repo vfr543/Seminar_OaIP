@@ -10,20 +10,20 @@ int main() {
 	random_device rd;
 	mt19937 gen(rd());
 	uniform_int_distribution<int> dist(-100, 100);
-	cout << "Èçíà÷àëüíûé ìàññèâ " << endl;
+	cout << "Ð˜Ð·Ð½Ð°Ñ‡Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð² " << endl;
 	for (int i = 0; i < 20; i++) {
 		a[i]=dist(gen);
 		cout << a[i] << ' ';
 	}
 	cout << endl;
-	cout << "Ìàêñèìàëüíûé ýëåìåíò " << *max_element(a.begin(), a.end()) << endl;
-	cout << "Ìèíèìàëüíûé ýëåìåíò " << *min_element(a.begin(), a.end()) << endl;
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ " << *max_element(a.begin(), a.end()) << endl;
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ " << *min_element(a.begin(), a.end()) << endl;
 	double sr = accumulate(a.begin(), a.end(), 0.0) / 2.0;
-	cout << "Ñðåäíåå çíà÷åíèå " << sr << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ " << sr << endl;
 	sort(a.begin(), a.end());
 	double med = accumulate(a.begin()+9, a.end()-9, 0.0) / 2.0;
-	cout << "Ìåäèàíà " << med << endl;
-	cout << "Îòñîðòèðîâàííûé ìàññèâ " << endl;
+	cout << "ÐœÐµÐ´Ð¸Ð°Ð½Ð° " << med << endl;
+	cout << "ÐžÑ‚ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð² " << endl;
 	for (int x : a) cout << x << ' ';
 	return 0;
 }
