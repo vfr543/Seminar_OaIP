@@ -26,10 +26,10 @@ void lstr(char str1[], char str2[]) {
         }
     }
     if (maxLength == 0) {
-        cout << "Îáùèõ ïîäñòðîê íå íàéäåíî" << endl;
+        cout << "ÐžÐ±Ñ‰Ð¸Ñ… Ð¿Ð¾Ð´ÑÑ‚Ñ€Ð¾Ðº Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾" << endl;
     }
     else {
-        cout << "Íàèáîëüøàÿ îáùàÿ ïîäñòðîêà ";
+        cout << "ÐÐ°Ð¸Ð±Ð¾Ð»ÑŒÑˆÐ°Ñ Ð¾Ð±Ñ‰Ð°Ñ Ð¿Ð¾Ð´ÑÑ‚Ñ€Ð¾ÐºÐ° ";
         for (int i = endPos - maxLength + 1; i <= endPos; i++) {
             cout << str1[i];
         }
@@ -43,9 +43,9 @@ int main() {
     setlocale(LC_ALL, "Russian");
     char str1[256];
     char str2[256];
-    cout << "Ââåäèòå ïåðâóþ ñòðîêó ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿ÐµÑ€Ð²ÑƒÑŽ ÑÑ‚Ñ€Ð¾ÐºÑƒ ";
     cin.getline(str1, 256);
-    cout << "Ââåäèòå âòîðóþ ñòðîêó ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‚Ð¾Ñ€ÑƒÑŽ ÑÑ‚Ñ€Ð¾ÐºÑƒ ";
     cin.getline(str2, 256);
     lstr(str1, str2);
     return 0;
