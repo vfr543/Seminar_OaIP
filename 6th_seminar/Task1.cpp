@@ -23,13 +23,13 @@ bool isPalindrome(char str[]) {
 int main() {
 	setlocale(LC_ALL, "Russian");
 	char str[100];
-	cout << "Ââåäèòå ñòðîêó: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ñ€Ð¾ÐºÑƒ: ";
 	cin.getline(str, 100);
 	if (isPalindrome(str)) {
-		cout << "Ýòî ïàëèíäðîì." << std::endl;
+		cout << "Ð­Ñ‚Ð¾ Ð¿Ð°Ð»Ð¸Ð½Ð´Ñ€Ð¾Ð¼." << std::endl;
 	}
 	else {
-		cout << "Ýòî íå ïàëèíäðîì." << std::endl;
+		cout << "Ð­Ñ‚Ð¾ Ð½Ðµ Ð¿Ð°Ð»Ð¸Ð½Ð´Ñ€Ð¾Ð¼." << std::endl;
 	}
 	return 0;
 }
