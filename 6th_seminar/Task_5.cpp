@@ -26,7 +26,7 @@ void extractWords(char str[]) {
 int main() {
     setlocale(LC_ALL, "Russian");
     char str[256];
-    cout << "Ââåäèòå ñòðîêó ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ñ€Ð¾ÐºÑƒ ";
     cin.getline(str, 256);
     extractWords(str);
     return 0;
