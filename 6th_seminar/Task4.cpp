@@ -23,15 +23,15 @@ int main() {
     setlocale(LC_ALL, "Russian");
     char A[256];
     char B[256];
-    cout << "Ââåäèòå ñòðîêó A: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ñ€Ð¾ÐºÑƒ A: ";
     cin.getline(A, 256);
-    cout << "Ââåäèòå ñòðîêó B: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ñ€Ð¾ÐºÑƒ B: ";
     cin.getline(B, 256);
     if (containsAllChars(A, B)) {
-        cout << "Äà" << endl;
+        cout << "Ð”Ð°" << endl;
     }
     else {
-        cout << "Íåò" << endl;
+        cout << "ÐÐµÑ‚" << endl;
     }
     return 0;
 }
