@@ -2,7 +2,7 @@
 #include <cstring>
 #include <cctype>
 using namespace std;
-void countVowelsAndConsonants(char str[]) {
+void count(char str[]) {
     int vowels = 0;
     int consonants = 0;
     const char vowelChars[] = "AEIOUY";
@@ -24,14 +24,14 @@ void countVowelsAndConsonants(char str[]) {
             }
         }
     }
-    cout << "Ãëàñíûõ " << vowels << endl;
-    cout << "Ñîãëàñíûõ " << consonants << endl;
+    cout << "Ð“Ð»Ð°ÑÐ½Ñ‹Ñ… " << vowels << endl;
+    cout << "Ð¡Ð¾Ð³Ð»Ð°ÑÐ½Ñ‹Ñ… " << consonants << endl;
 }
 int main() {
     setlocale(LC_ALL, "Russian");
     char input[256];
-    cout << "Ââåäèòå ñòðîêó ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ñ€Ð¾ÐºÑƒ ";
     cin.getline(input, 256);
-    countVowelsAndConsonants(input);
+    count(input);
     return 0;
 }
