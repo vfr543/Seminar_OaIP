@@ -20,9 +20,9 @@ void rem(char str[]) {
 int main() {
     setlocale(LC_ALL, "Russian");
     char input[256];
-    cout << "Ââåäèòå ñòðîêó ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ñ€Ð¾ÐºÑƒ ";
     cin.getline(input, 256);
     rem(input);
-    cout << "Ñòðîêà áåç öèôð " << input << endl;
+    cout << "Ð¡Ñ‚Ñ€Ð¾ÐºÐ° Ð±ÐµÐ· Ñ†Ð¸Ñ„Ñ€ " << input << endl;
     return 0;
 }
