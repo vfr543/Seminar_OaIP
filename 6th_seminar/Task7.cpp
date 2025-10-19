@@ -38,9 +38,9 @@ int main() {
     setlocale(LC_ALL, "Russian");
     char input[256];
     char output[512];
-    cout << "Ââåäèòå ñòðîêó äëÿ ñæàòèÿ ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ñ€Ð¾ÐºÑƒ Ð´Ð»Ñ ÑÐ¶Ð°Ñ‚Ð¸Ñ ";
     cin.getline(input, 256);
     compressRLE(input, output);
-    cout << "Ñæàòàÿ ñòðîêà " << output << endl;
+    cout << "Ð¡Ð¶Ð°Ñ‚Ð°Ñ ÑÑ‚Ñ€Ð¾ÐºÐ° " << output << endl;
     return 0;
 }
