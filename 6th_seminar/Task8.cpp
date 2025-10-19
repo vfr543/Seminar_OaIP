@@ -21,9 +21,9 @@ void correctCase(char text[]) {
 int main() {
     setlocale(LC_ALL, "Russian");
     char text[256];
-    cout << "Ââåäèòå òåêñò ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚ÐµÐºÑÑ‚ ";
     cin.getline(text, 256);
     correctCase(text);
-    cout << "Èñïðàâëåííûé òåêñò " << text << endl;
+    cout << "Ð˜ÑÐ¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð½Ñ‹Ð¹ Ñ‚ÐµÐºÑÑ‚ " << text << endl;
     return 0;
 }
