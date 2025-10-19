@@ -13,13 +13,13 @@ int main() {
 	vector<vector<double>> pressurenorm(5, vector<double>(100));
 	vector<vector<double>> pressurer(5, vector<double>(99));
 	vector<vector<double>> pressurem(5, vector<double>(2));
-	cout << "Ââåäèòå çíà÷åíèÿ 5 êàíàëîâ òåìïåğàòóğû ";
+	cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ·Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ñ 5 ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ² Ñ‚ĞµĞ¼Ğ¿ĞµÑ€Ğ°Ñ‚ÑƒÑ€Ñ‹ ";
 	for (int i = 0; i < 5; i++) {
 		for (int j = 0; j < 30; j++) {
 			cin >> temp[i][j];
 		}
 	}
-	cout << "Ââåäèòå çíà÷åíèÿ 5 êàíàëîâ äàâëåíèÿ ";
+	cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ·Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ñ 5 ĞºĞ°Ğ½Ğ°Ğ»Ğ¾Ğ² Ğ´Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ñ ";
 	for (int i = 0; i < 5; i++) {
 		for (int j = 0; j < 100; j++) {
 			cin >> pressure[i][j];
@@ -31,17 +31,17 @@ int main() {
 		pressurem[i][1] = *max_element(pressure[i].begin(), pressure[i].end());
 		transform(temp[i].begin(), temp[i].end() - 1, temp[i].begin() + 1, tempr[i].begin(), [](double x , double y) { return y - x; });
 		transform(pressure[i].begin(), pressure[i].end() - 1, pressure[i].begin() + 1, pressurer[i].begin(), [](double x, double y) { return y - x; });
-		cout << "Ñğåäíÿÿ òåìïåğàòóğà " << i+1 << " êàíàëà " << tempsr[i];
+		cout << "Ğ¡Ñ€ĞµĞ´Ğ½ÑÑ Ñ‚ĞµĞ¼Ğ¿ĞµÑ€Ğ°Ñ‚ÑƒÑ€Ğ° " << i+1 << " ĞºĞ°Ğ½Ğ°Ğ»Ğ° " << tempsr[i];
 	}
 	for (int x = 0; x < 5; x++) {
-		cout << endl << "Ìèíèìàëüíîå äàâëåíèå " << x+1 << " êàíàëà " << pressurem[x][0] << endl << "Ìàêñèìàëüíîå äàâëåíèå " << x+1 << " êàíàëà " << pressurem[x][1];
+		cout << endl << "ĞœĞ¸Ğ½Ğ¸Ğ¼Ğ°Ğ»ÑŒĞ½Ğ¾Ğµ Ğ´Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ğµ " << x+1 << " ĞºĞ°Ğ½Ğ°Ğ»Ğ° " << pressurem[x][0] << endl << "ĞœĞ°ĞºÑĞ¸Ğ¼Ğ°Ğ»ÑŒĞ½Ğ¾Ğµ Ğ´Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ğµ " << x+1 << " ĞºĞ°Ğ½Ğ°Ğ»Ğ° " << pressurem[x][1];
 	}
 	for (int x = 0; x < 5; x++) { 
-		cout << endl << "Ğàçíîñòè òåìïåğàòóğû " << x+1 << " êàíàëà ";
+		cout << endl << "Ğ Ğ°Ğ·Ğ½Ğ¾ÑÑ‚Ğ¸ Ñ‚ĞµĞ¼Ğ¿ĞµÑ€Ğ°Ñ‚ÑƒÑ€Ñ‹ " << x+1 << " ĞºĞ°Ğ½Ğ°Ğ»Ğ° ";
  		for_each(tempr[x].begin(), tempr[x].end(), [](double r) {cout << r << ' '; }); 
 	}
 	for (int x = 0; x < 5; x++) {
-		cout << endl << "Ğàçíîñòè äàâëåíèÿ " << x+1 << " êàíàëà ";
+		cout << endl << "Ğ Ğ°Ğ·Ğ½Ğ¾ÑÑ‚Ğ¸ Ğ´Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ñ " << x+1 << " ĞºĞ°Ğ½Ğ°Ğ»Ğ° ";
 		for_each(pressurer[x].begin(), pressurer[x].end(), [](double r) {cout << r << ' '; });
 	}
 	cout << endl;
@@ -58,17 +58,17 @@ int main() {
 		tempsrind[i][0] = tempsr[i];
 		tempsrind[i][1] = i + 1;
 	}
-	cout << "Êàíàë ñ íàèáîëüøåé âàğèàöèåé òåìïåğàòóğû " << tmpch << endl;
+	cout << "ĞšĞ°Ğ½Ğ°Ğ» Ñ Ğ½Ğ°Ğ¸Ğ±Ğ¾Ğ»ÑŒÑˆĞµĞ¹ Ğ²Ğ°Ñ€Ğ¸Ğ°Ñ†Ğ¸ĞµĞ¹ Ñ‚ĞµĞ¼Ğ¿ĞµÑ€Ğ°Ñ‚ÑƒÑ€Ñ‹ " << tmpch << endl;
 	for (int x = 0; x < 5; x++) {
-		cout << endl << "Íîğìàëèçîâàííûå çíà÷åíèÿ äàâëåíèÿ " << x+1 << " êàíàëà ";
+		cout << endl << "ĞĞ¾Ñ€Ğ¼Ğ°Ğ»Ğ¸Ğ·Ğ¾Ğ²Ğ°Ğ½Ğ½Ñ‹Ğµ Ğ·Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ñ Ğ´Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ñ " << x+1 << " ĞºĞ°Ğ½Ğ°Ğ»Ğ° ";
 		for_each(pressurenorm[x].begin(), pressurenorm[x].end(), [](double r) { cout << r << ' '; });
 	}
 	for (int x = 0; x < 5; x++) {
-		cout << endl << "Ïèêè äàâëåíèÿ " << x+1 << " êàíàëà ïîñëå íîğìàëèçàöèè ";
+		cout << endl << "ĞŸĞ¸ĞºĞ¸ Ğ´Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ñ " << x+1 << " ĞºĞ°Ğ½Ğ°Ğ»Ğ° Ğ¿Ğ¾ÑĞ»Ğµ Ğ½Ğ¾Ñ€Ğ¼Ğ°Ğ»Ğ¸Ğ·Ğ°Ñ†Ğ¸Ğ¸ ";
 		for_each(pressurenorm[x].begin(), pressurenorm[x].end(), [](double r) { if (r > 0.9) { cout << r << ' '; }});
 	}
 	sort(tempsrind.begin(), tempsrind.end());
-	cout << endl << "Êàíàë ñ ìàêñèìàëüíîé ñğåäíåé òåìïåğàòóğîé " << tempsrind[4][1] << " Ìàêñèìàëüíàÿ ñğåäíÿÿ òåìïåğàòóğà " << tempsrind[4][0];
+	cout << endl << "ĞšĞ°Ğ½Ğ°Ğ» Ñ Ğ¼Ğ°ĞºÑĞ¸Ğ¼Ğ°Ğ»ÑŒĞ½Ğ¾Ğ¹ ÑÑ€ĞµĞ´Ğ½ĞµĞ¹ Ñ‚ĞµĞ¼Ğ¿ĞµÑ€Ğ°Ñ‚ÑƒÑ€Ğ¾Ğ¹ " << tempsrind[4][1] << " ĞœĞ°ĞºÑĞ¸Ğ¼Ğ°Ğ»ÑŒĞ½Ğ°Ñ ÑÑ€ĞµĞ´Ğ½ÑÑ Ñ‚ĞµĞ¼Ğ¿ĞµÑ€Ğ°Ñ‚ÑƒÑ€Ğ° " << tempsrind[4][0];
 	
 	return 0;
 }
