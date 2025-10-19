@@ -24,7 +24,7 @@ int countUniqueChars(char str[]) {
 
 void printUniqueChars(char str[]) {
     int length = strlen(str);
-    cout << "Óíèêàëüíûå ñèìâîëû ";
+    cout << "Ð£Ð½Ð¸ÐºÐ°Ð»ÑŒÐ½Ñ‹Ðµ ÑÐ¸Ð¼Ð²Ð¾Ð»Ñ‹ ";
     for (int i = 0; i < length; i++) {
         bool isf = true;
         for (int j = 0; j < i; j++) {
@@ -46,10 +46,10 @@ void printUniqueChars(char str[]) {
 int main() {
     setlocale(LC_ALL, "Russian");
     char input[256];
-    cout << "Ââåäèòå ñòðîêó ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ñ€Ð¾ÐºÑƒ ";
     cin.getline(input, 256);
     int uniqueCount = countUniqueChars(input);
-    cout << "Êîëè÷åñòâî óíèêàëüíûõ ñèìâîëîâ " << uniqueCount << endl;
+    cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑƒÐ½Ð¸ÐºÐ°Ð»ÑŒÐ½Ñ‹Ñ… ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð² " << uniqueCount << endl;
     printUniqueChars(input);
     return 0;
 }
